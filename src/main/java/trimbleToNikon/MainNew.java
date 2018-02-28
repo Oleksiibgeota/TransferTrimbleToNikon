@@ -29,8 +29,6 @@ public class MainNew {
         System.out.println(station);
         System.out.println(station2);
         System.out.println(station);
-
-
         persist.calcXYZ(station,station2,rawPoints);
     }
 
