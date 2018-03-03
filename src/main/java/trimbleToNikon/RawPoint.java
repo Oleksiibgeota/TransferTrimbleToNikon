@@ -6,6 +6,15 @@ public class RawPoint {
     private double horizontalAngel;
     private double verticalAngel;
     private double height;
+
+    public int getName() {
+        return name;
+    }
+
+    public void setName(int name) {
+        this.name = name;
+    }
+
     private int name;
 
     public long getId() {
@@ -48,13 +57,8 @@ public class RawPoint {
         this.height = height;
     }
 
-    public int getName() {
-        return name;
-    }
 
-    public void setName(int name) {
-        this.name = name;
-    }
+
 
     @Override
     public String toString() {

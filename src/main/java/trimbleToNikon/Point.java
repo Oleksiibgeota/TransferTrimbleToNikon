@@ -5,7 +5,7 @@ public class Point {
     private double x;
     private double y;
     private double z;
-    private int name;
+    private String name;
 
 
     public long getId() {
@@ -40,20 +40,21 @@ public class Point {
         this.z = z;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
     @Override
     public String toString() {
-        return "Point{" +
-                "x=" + x +
-                ", y=" + y +
-                ", z=" + z +
-                '}';
+        String result = "Point{";
+        result += x > 0 ? " x=" + x : "";
+        result += y > 0 ? " y=" + y : "";
+        result += z > 0 ? " z=" + z : "";
+        result += "}";
+        return result;
     }
 }
